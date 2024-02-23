@@ -1,0 +1,25 @@
+{% extends 'index.html'%} 
+{% block title %} Sign Up {% endblock %}
+{% block content%}
+<form method="post">
+    <h3 align = "center" class="p-5">Create an Account</h3>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" name="fullname">
+        <label for="floatingInput">Full name</label>
+      </div>
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" name="email">
+        <label for="floatingInput">Email address</label>
+      </div>
+    <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" name="password1">
+        <label for="floatingPassword">Password</label>
+      </div>
+    <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" name="password2">
+        <label for="floatingPassword">Confirm Password</label>
+      </div>
+    <button type="button" class="btn btn-outline-dark">Create Account</button>  
+</form>
+{% endblock %}
+ 
