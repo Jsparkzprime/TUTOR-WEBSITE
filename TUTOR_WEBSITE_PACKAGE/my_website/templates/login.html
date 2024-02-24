@@ -1,5 +1,17 @@
 {% extends 'index.html'%} 
 {% block title %} Login {% endblock %}
 {% block content%}
-<h1>Sign in Here</h1>
+<form method="post">
+    <h3 align = "center" class="p-5">Login to your account</h3>
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" name="email">
+        <label for="floatingInput">Email address</label>
+      </div>
+    <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" name="password">
+        <label for="floatingPassword">Password</label>
+      </div>
+    <button type="submit" class="btn btn-outline-dark">Login</button>  
+</form>
+
 {% endblock %}
